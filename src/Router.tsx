@@ -8,7 +8,7 @@ const BASE_URL = process.env.PUBLIC_URL;
 
 const defaultRouter = createBrowserRouter([
   {
-    path: BASE_URL + "/",
+    path: "/",
     element: <App />,
     children: [
       {

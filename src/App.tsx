@@ -8,6 +8,7 @@ import { Outlet } from 'react-router-dom';
 import ToggleBtn from './Components/ToggleBtn';
 import { useRecoilValue } from 'recoil';
 import { isDarkAtom } from './atom';
+import ToDoList from './routes/ToDoList';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -93,7 +94,7 @@ function App() {
           <BtnContainer>
             <ToggleBtn />
           </BtnContainer>
-          <Outlet />
+          <ToDoList />
           {/* <ReactQueryDevtools initialIsOpen={false} /> */}
         </ThemeProvider>
       </HelmetProvider>
